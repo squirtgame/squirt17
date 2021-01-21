@@ -3,7 +3,12 @@ const withCSS = require("@zeit/next-css");
 const commonsChunkConfig = require("@zeit/next-css/commons-chunk-config");
 const withProgressBar = require('next-progressbar');
 
-module.exports = withProgressBar(
+
+module.exports = { 
+distDir: 'build',
+}
+
+module.exports = withProgressBar( 
     
     withCSS(withSASS({
     webpack: (config, { isServer }) => {
