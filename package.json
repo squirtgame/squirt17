@@ -46,7 +46,7 @@
     "test coverage": "jest --env=jsdom --coverage",
     "dev": "next -p 3002",
     "build": "next build",
-    "start": "next start -p 3002",
+    "start": "next start",
     "favicon": "node scripts.js favicon",
     "export": "next export"
   },
