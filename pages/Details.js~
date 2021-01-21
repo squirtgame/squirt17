@@ -1,0 +1,110 @@
+import React, {Component} from "react";
+import {connect} from "react-redux";
+import Page from "../site-components/page/Page";
+import {Space} from "../components/Space";
+
+class Details extends Component {
+    static mapStateToProps = ({dangerMode}) => ({dangerMode});
+
+    render () {
+        return (
+            <Page header={<Space danger={this.props.dangerMode}/>} contentClass="full-width">
+                                
+                <i><p>Baby if you've got the HPB to play,</p>
+                <p>and you think of crypto every day,</p>
+                <p>guess the number and win all the wei!</p>
+
+                <br />
+                <p>We invite you all to play along,</p>
+                <p>don't worry if your guess is wrong,</p>
+                <p>have you guessed the reference to the song?</p></i>
+
+                <br />
+                <br />
+
+                <p>HPB17 Smart Contract can be verified here: <a href="https://explorer.myhpbwallet.com/address/0x0de1e9e64fef95ef7af9c3bb64d417baf0409dc9" target="_blank"><b>0x0de1e9e64fef95ef7af9c3bb64d417baf0409dc9</b></a></p>
+            
+                <div align="left">
+                <p>HPB17 is a really simple guessing game, where you try to guess a number between 1 and 1,000,000</p>
+
+                <p>Ok we know, guessing a number in such a big range is nigh-on impossible, but don't worry, the first guess of every game is free, and better still, if you guess incorrectly, then providing nobody else makes a guess after you, then you will win all the HPB stored in the contract anyway!</p>
+
+                <p>Yep, you heard us right. Get it wrong, and you can still win all the HPB!</p>
+
+                <p>So what actually happens? Well as soon as you make a guess, a countdown timer starts. It begins counting down from 59m 59s, and if the timer reaches zero and nobody else makes a guess, then the last person who made a guess wins all the HPB in the contract!</p>
+
+                <p>But what happens if someone else makes a guess? Well that person becomes the "last player to guess" and the countdown timer resets to 59m 59s - Once again, if the timer reaches zero then that person wins all the HPB!</p>
+
+                <p>After each subsequent guess, the contract will even tell you that you that you need to go higher or lower for the next guess and the "guessing range" shrinks after each subsequent guess.</p>
+
+                <p>You've probably already worked it out for yourself, but as each guess is made, the chances of actually guessing the correct number improves every time. Now because it gets easier to guess the number, the cost of the guess also increases.</p>
+
+                <br />
+
+                <p>Guess 1 - FREE!</p>
+                <p>Guess 2 - 0.0025 HPB</p>
+                <p>Guess 3 - 0.0050 HPB</p>
+                <p>Guess 4 - 0.0060 HPB</p>
+                <p>Guess 5 - 0.0070 HPB</p>
+                <p>Guess 6 - 0.0080 HPB</p>
+                <p>Guess 7 - 0.0090 HPB</p>
+                <p>Guess 8 - 0.0100 HPB</p>
+                <p>Guess 9 - 0.0200 HPB</p>
+                <p>Guess 10 - 0.0300 HPB</p>
+                <p>Guess 11 - 0.0400 HPB</p>
+                <p>Guess 12 - 0.0500 HPB</p>
+                <p>Guess 13 - 0.0600 HPB</p>
+                <p>Guess 14 - 0.0700 HPB</p>
+                <p>Guess 15 - 0.0800 HPB</p>
+                <p>Guess 16 - 0.0900 HPB</p>
+                <p>Guess 17 - 0.1 HPB - Automatically refunded if you don't win!</p>
+
+                <br />
+
+                <p>If nobody guesses by the 17th guess, then the game ends and the HPB in the contract gets automatically transferred to the next game (minus a small dev fee) so as each game rolls over, the amount of HPB in the contract that is up for grabs gets bigger and bigger!</p>
+
+                <br />
+
+                <h3>FAQ</h3>
+                <p><b>How is the number to guess generated?</b></p>
+                <p>We use Oraclize the generate random numbers which are stored within the contract - see <b><a href="https://docs.oraclize.it/#security-deepdive-authenticity-proofstypes-storage-and-delivery" target="_blank">Oraclize Random Numbers</a></b> for more information</p>
+
+                <p><b>What do I need to be able to play?</b></p>
+                <p>All that is required is an HPB wallet, some HPB, and Metamask.</p>
+
+                <p><b>What if I make a guess at the same time as someone else?</b></p>
+                <p>Whichever guess is written to the blockchain first will be the official guess, and the other
+                    guess will be rejected. Please check your transaction hash or click on the game number header
+                    on the home page, which will show you the game transactions. If you were unsuccessful, the will 
+                    see the transaction will have been reverted. 
+                </p>
+
+                <p><b>You said the first guess is free?</b></p>
+                <p>The first guess of every new game is free, however this involves sending your guess to the 
+                    smart contract on the blockchain, which costs gas. This will normally be around $0.02. 
+                </p>
+
+                <p><b>I'm receiving a Metamask error?</b></p>
+                <p>Occasionally there may be a delay with processing to the blockchain. In this instance, we'd recommend
+                    completely cancelling/rejecting the transaction in Metamask, and try guessing again.
+                </p>
+
+                <p><b>Can I alter the gas to make a saving?</b></p>
+                <p>Of course! We have injected a default fee of 2.8, however you can increase or decrease this value
+                    to your choosing. Increasing the value will cost more, however it will usually speed up the
+                    time taken to write your guess to the smart contract.
+                </p>
+
+                <p><b>Can I interact with the smart contract game directly?</b></p>
+                <p>YES! And that is the beauty of HPB and the decentralized blockchain!
+                </p>
+
+
+
+                </div>
+            </Page>
+        )
+    }
+}
+
+export default connect(Details.mapStateToProps)(Details);
