@@ -124,7 +124,7 @@ module.exports = require("prop-types");
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = {"masterContract":"0x9b6cc16c353189288c1417b9b9973fd9d374eefd","httpProvider":"https://node.hpb.io","etherscanUrl":"https://hpbscan.org","contractUpdateInterval":{"seconds":2},"randomNumberWaitTime":{"seconds":60},"dangerModeStartTime":{"minutes":5,"seconds":0}}
+module.exports = {"masterContract":"0x76c266d2284d74e6ec2de69282c4e1bd4d9444ee","httpProvider":"https://node.hpb.io","etherscanUrl":"https://hpbscan.org","contractUpdateInterval":{"seconds":2},"randomNumberWaitTime":{"seconds":60},"dangerModeStartTime":{"minutes":3,"seconds":0}}
 
 /***/ }),
 /* 6 */
@@ -228,97 +228,15 @@ var Contract = __webpack_require__(19);
 
 // CONCATENATED MODULE: ./services/smart-contracts/templateAbi.js
 var templateAbi = [{
-  "constant": true,
-  "inputs": [],
-  "name": "contractHasBeenSpawned",
-  "outputs": [{
-    "name": "",
-    "type": "bool"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "gameEnd",
-  "outputs": [{
-    "name": "",
-    "type": "uint256"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "thisContractAddress",
-  "outputs": [{
-    "name": "",
-    "type": "address"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "highValue",
-  "outputs": [{
-    "name": "",
-    "type": "uint256"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "thisContractBalance",
-  "outputs": [{
-    "name": "",
-    "type": "uint256"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
   "constant": false,
-  "inputs": [],
-  "name": "showRandomNumber",
-  "outputs": [],
-  "payable": false,
-  "stateMutability": "nonpayable",
-  "type": "function"
-}, {
-  "constant": false,
-  "inputs": [],
-  "name": "startNewGame",
-  "outputs": [],
-  "payable": false,
-  "stateMutability": "nonpayable",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "gameAbandoned",
-  "outputs": [{
-    "name": "",
-    "type": "bool"
+  "inputs": [{
+    "name": "_guess",
+    "type": "uint256"
   }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "guessedCorrectly",
-  "outputs": [{
-    "name": "",
-    "type": "bool"
-  }],
-  "payable": false,
-  "stateMutability": "view",
+  "name": "guessNumber",
+  "outputs": [],
+  "payable": true,
+  "stateMutability": "payable",
   "type": "function"
 }, {
   "constant": false,
@@ -334,133 +252,7 @@ var templateAbi = [{
 }, {
   "constant": false,
   "inputs": [],
-  "name": "spawnNewContractSeventeenGuesses",
-  "outputs": [],
-  "payable": false,
-  "stateMutability": "nonpayable",
-  "type": "function"
-}, {
-  "constant": false,
-  "inputs": [],
-  "name": "destroy",
-  "outputs": [],
-  "payable": true,
-  "stateMutability": "payable",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "factoryAddress",
-  "outputs": [{
-    "name": "",
-    "type": "address"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "timeReset",
-  "outputs": [{
-    "name": "",
-    "type": "uint256"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "randomNumberRetrieved",
-  "outputs": [{
-    "name": "",
-    "type": "bool"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "mutex",
-  "outputs": [{
-    "name": "",
-    "type": "bool"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "theCorrectNumber",
-  "outputs": [{
-    "name": "",
-    "type": "uint256"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": false,
-  "inputs": [{
-    "name": "_guess",
-    "type": "uint256"
-  }],
-  "name": "guessNumber",
-  "outputs": [],
-  "payable": true,
-  "stateMutability": "payable",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "lowValue",
-  "outputs": [{
-    "name": "",
-    "type": "uint256"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "nextGuess",
-  "outputs": [{
-    "name": "",
-    "type": "uint256"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "costOfNextGuess",
-  "outputs": [{
-    "name": "",
-    "type": "uint256"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "masterAddress",
-  "outputs": [{
-    "name": "",
-    "type": "address"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": false,
-  "inputs": [],
-  "name": "abandonContract",
+  "name": "showRandomNumber",
   "outputs": [],
   "payable": false,
   "stateMutability": "nonpayable",
@@ -474,48 +266,20 @@ var templateAbi = [{
   "stateMutability": "nonpayable",
   "type": "function"
 }, {
-  "constant": true,
+  "constant": false,
   "inputs": [],
-  "name": "randomPublic",
-  "outputs": [{
-    "name": "",
-    "type": "uint256"
-  }],
+  "name": "spawnNewContractSeventeenGuesses",
+  "outputs": [],
   "payable": false,
-  "stateMutability": "view",
+  "stateMutability": "nonpayable",
   "type": "function"
 }, {
-  "constant": true,
+  "constant": false,
   "inputs": [],
-  "name": "currentRange",
-  "outputs": [{
-    "name": "",
-    "type": "uint256"
-  }],
+  "name": "startNewGame",
+  "outputs": [],
   "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "lastGuessAddress",
-  "outputs": [{
-    "name": "",
-    "type": "address"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
-  "inputs": [],
-  "name": "admin",
-  "outputs": [{
-    "name": "",
-    "type": "address"
-  }],
-  "payable": false,
-  "stateMutability": "view",
+  "stateMutability": "nonpayable",
   "type": "function"
 }, {
   "inputs": [{
@@ -547,6 +311,237 @@ var templateAbi = [{
   }],
   "name": "newRandomNumber_uint256",
   "type": "event"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "admin",
+  "outputs": [{
+    "name": "",
+    "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "contractHasBeenSpawned",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "costOfNextGuess",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "currentRange",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "factoryAddress",
+  "outputs": [{
+    "name": "",
+    "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "fixDevAmount",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "gameAbandoned",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "gameEnd",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "guessedCorrectly",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "highValue",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "lastGuessAddress",
+  "outputs": [{
+    "name": "",
+    "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "lowValue",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "masterAddress",
+  "outputs": [{
+    "name": "",
+    "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "mutex",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "nextGuess",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "randomNumberRetrieved",
+  "outputs": [{
+    "name": "",
+    "type": "bool"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "randomPublic",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "theCorrectNumber",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "thisContractAddress",
+  "outputs": [{
+    "name": "",
+    "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "thisContractBalance",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "timeReset",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
 }];
 // CONCATENATED MODULE: ./services/smart-contracts/TemplateContract.js
 
@@ -1817,14 +1812,6 @@ var settings_default = /*#__PURE__*/__webpack_require__.n(settings);
 // CONCATENATED MODULE: ./services/smart-contracts/factoryAbi.js
 var factoryAbi = [{
   "constant": false,
-  "inputs": [],
-  "name": "abandonContract",
-  "outputs": [],
-  "payable": false,
-  "stateMutability": "nonpayable",
-  "type": "function"
-}, {
-  "constant": false,
   "inputs": [{
     "name": "_address",
     "type": "address"
@@ -1833,14 +1820,6 @@ var factoryAbi = [{
   "outputs": [],
   "payable": false,
   "stateMutability": "nonpayable",
-  "type": "function"
-}, {
-  "constant": false,
-  "inputs": [],
-  "name": "destroy",
-  "outputs": [],
-  "payable": true,
-  "stateMutability": "payable",
   "type": "function"
 }, {
   "constant": false,
@@ -1883,39 +1862,6 @@ var factoryAbi = [{
 }, {
   "constant": false,
   "inputs": [{
-    "name": "_percent",
-    "type": "uint256"
-  }],
-  "name": "setDevPercentage",
-  "outputs": [],
-  "payable": false,
-  "stateMutability": "nonpayable",
-  "type": "function"
-}, {
-  "constant": false,
-  "inputs": [{
-    "name": "_seconds",
-    "type": "uint256"
-  }],
-  "name": "setGameLengthSeconds",
-  "outputs": [],
-  "payable": false,
-  "stateMutability": "nonpayable",
-  "type": "function"
-}, {
-  "constant": false,
-  "inputs": [{
-    "name": "amountWei",
-    "type": "uint256"
-  }],
-  "name": "setInitialGamePool",
-  "outputs": [],
-  "payable": false,
-  "stateMutability": "nonpayable",
-  "type": "function"
-}, {
-  "constant": false,
-  "inputs": [{
     "name": "_address",
     "type": "address"
   }],
@@ -1936,20 +1882,6 @@ var factoryAbi = [{
   "constant": false,
   "inputs": [],
   "name": "transferEthSeventeenGuesses",
-  "outputs": [],
-  "payable": false,
-  "stateMutability": "nonpayable",
-  "type": "function"
-}, {
-  "constant": false,
-  "inputs": [{
-    "name": "guessIndex",
-    "type": "uint256"
-  }, {
-    "name": "newGuessCost",
-    "type": "uint256"
-  }],
-  "name": "updateGuessCost",
   "outputs": [],
   "payable": false,
   "stateMutability": "nonpayable",
@@ -1990,17 +1922,6 @@ var factoryAbi = [{
   "type": "function"
 }, {
   "constant": true,
-  "inputs": [],
-  "name": "devPercentage",
-  "outputs": [{
-    "name": "",
-    "type": "uint256"
-  }],
-  "payable": false,
-  "stateMutability": "view",
-  "type": "function"
-}, {
-  "constant": true,
   "inputs": [{
     "name": "",
     "type": "uint256"
@@ -2009,6 +1930,17 @@ var factoryAbi = [{
   "outputs": [{
     "name": "",
     "type": "address"
+  }],
+  "payable": false,
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "constant": true,
+  "inputs": [],
+  "name": "fixDevAmount",
+  "outputs": [{
+    "name": "",
+    "type": "uint256"
   }],
   "payable": false,
   "stateMutability": "view",
