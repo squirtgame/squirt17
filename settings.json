@@ -1,0 +1,15 @@
+{
+  "masterContract": "0x76c266d2284d74e6ec2de69282c4e1bd4d9444ee",
+  "httpProvider": "https://node.hpb.io",
+  "etherscanUrl": "https://hpbscan.org",
+  "contractUpdateInterval": {
+    "seconds": 2
+  },
+  "randomNumberWaitTime": {
+    "seconds": 60
+  },
+  "dangerModeStartTime": {
+    "minutes": 3,
+    "seconds": 0
+  }
+}
