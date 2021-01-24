@@ -3,10 +3,10 @@ const withCSS = require("@zeit/next-css");
 const commonsChunkConfig = require("@zeit/next-css/commons-chunk-config");
 const withProgressBar = require('next-progressbar');
 
-
-module.exports = { 
-distDir: 'build',
-}
+module.exports = {
+  // Target must be serverless
+  target: 'serverless'
+};
 
 module.exports = withProgressBar( 
     
@@ -27,4 +27,8 @@ module.exports = withProgressBar(
 
 )
 )
+
+
+
+
 ;
