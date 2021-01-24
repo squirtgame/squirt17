@@ -48,7 +48,8 @@
     "build": "next build",
     "start": "next start",
     "favicon": "node scripts.js favicon",
-    "export": "next export"
+    "export": "next export",
+	"postbuild": "next-on-netlify"
   },
   "jest": {
     "testURL": "http://localhost:3002",
