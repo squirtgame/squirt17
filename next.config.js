@@ -6,24 +6,24 @@ const withProgressBar = require('next-progressbar');
 
 // next.config.js
 module.exports = {
-productionBrowserSourceMaps: true,
 }
 
-module.exports = withProgressBar( 
-    
-    withCSS(withSASS({
-    webpack: (config, { isServer }) => {
-        if (!isServer) {
-            config = commonsChunkConfig(config, /\.(sass|scss|css)$/)
-        }
+module.exports = withProgressBar(
 
-        return config
-    },
-    sassLoaderOptions: {
-        indentedSyntax: true,
-        indentWidth: 4,
-        outputStyle: "expanded"
-    }
+withCSS(withSASS({
+productionBrowserSourceMaps: true,
+webpack: (config, { isServer }) => {
+if (!isServer) {
+config = commonsChunkConfig(config, /\.(sass|scss|css)$/)
+}
+
+return config
+},
+sassLoaderOptions: {
+indentedSyntax: true,
+indentWidth: 4,
+outputStyle: "expanded"
+}
 })
 
 )
