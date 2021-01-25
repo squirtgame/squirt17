@@ -4,6 +4,11 @@ const commonsChunkConfig = require("@zeit/next-css/commons-chunk-config");
 const withProgressBar = require('next-progressbar');
 
 
+module.exports = {
+distDir: 'build',
+}
+
+
 module.exports = withProgressBar(
 
 withCSS(withSASS({
