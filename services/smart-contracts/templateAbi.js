@@ -397,4 +397,4 @@ export const templateAbi = [
 		"stateMutability": "view",
 		"type": "function"
 	}
-];
+] ;
