@@ -22,13 +22,16 @@ class MainMenu extends Component {
         return (
             <nav className={joinClassNames("menu", className)} {...props}>
                 <Link href="/">
-                    <a className={this.getActiveClass("https://hpb17.com")}>Play</a>
+                    <a className={this.getActiveClass("/")}>Play</a>
                 </Link>
                 <Link href="/Details">
-                    <a className={this.getActiveClass("https://hpb17.com/Details")}>Details & FAQ</a>
+                    <a className={this.getActiveClass("/Details")}>Details</a>
+                </Link>
+                <Link href="/FAQ">
+                    <a className={this.getActiveClass("/Faq")}>FAQ</a>
                 </Link>
                 <Link href="/PreviousGame">
-                    <a className={this.getActiveClass("https://hbp17.com/PreviousGame")}>Previous game Info</a>
+                    <a className={this.getActiveClass("https://hbp17.com/PreviousGame")}>Previous game</a>
                 </Link>
             </nav>
         );
