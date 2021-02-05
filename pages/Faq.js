@@ -9,6 +9,8 @@ class Details extends Component {
     render () {
         return (
         <Page header={<Space danger={this.props.dangerMode}/>} contentClass="full-width">
+		                <div className="glass container bg-color-white br-5">
+                    <h1 className="normal display-6">FAQ</h1>
                                 
                 <br />
                 <br />
