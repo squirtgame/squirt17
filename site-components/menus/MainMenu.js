@@ -27,13 +27,13 @@ class MainMenu extends Component {
                 <Link href="/Details">
                     <a className={this.getActiveClass("/Details")}>Details</a>
                 </Link>
-                <Link href="/FAQ">
+                <Link href="/Faq">
                     <a className={this.getActiveClass("/Faq")}>FAQ</a>
                 </Link>
                 <Link href="/PreviousGame">
-                    <a className={this.getActiveClass("https://hbp17.com/PreviousGame")}>Previous game</a>
-                <Link href="/Contact Us">
-                    <a className={this.getActiveClass("https://hbp17.com/Contact")}>Contact Us</a>
+                    <a className={this.getActiveClass("/PreviousGame")}>Previous game</a>
+                <Link href="/Contact">
+                    <a className={this.getActiveClass("/Contact")}>Contact Us</a>
                 </Link>
             </nav>
         );
