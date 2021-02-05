@@ -32,6 +32,8 @@ class MainMenu extends Component {
                 </Link>
                 <Link href="/PreviousGame">
                     <a className={this.getActiveClass("https://hbp17.com/PreviousGame")}>Previous game</a>
+                <Link href="/Contact Us">
+                    <a className={this.getActiveClass("https://hbp17.com/Contact")}>Contact Us</a>
                 </Link>
             </nav>
         );
