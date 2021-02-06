@@ -1,5 +1,5 @@
 {
-  "masterContract": "0x1bd472f80816a08de671b9e6699afbdb6579866d",
+  "masterContract": "0xe28b16697e193f648e63797d814279497a0ccdd9",
   "httpProvider": "https://node.hpb.io",
   "etherscanUrl": "https://hpbscan.org",
   "contractUpdateInterval": {
