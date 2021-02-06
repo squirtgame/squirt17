@@ -8,9 +8,26 @@ class Contact extends Component {
 
     render () {
         return (
-            <Page header={<Space danger={this.props.dangerMode}/>} contentClass="full-width">
-                <div className="glass container bg-color-white br-5">
-                    <h1 className="normal display-6">Contact Us</h1>
+        <Page header={<Space danger={this.props.dangerMode}/>} contentClass="full-width">
+                                
+                <br />
+                <br />
+
+
+
+			   <div align="left">
+                <p>HPB17 Was developed by jeffpUK (jeff@hpb17.com) and jayden (jayden@hpb17.com)- </p>
+
+                <br />
+                <br />
+
+                <p>You can also find us both on Telegram (@jeffpUK | @jxden) usually frequenting the HPB_Global Telegram group</p>
+
+                <br />
+
+
+
+
                 </div>
             </Page>
         )
