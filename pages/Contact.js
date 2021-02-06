@@ -17,4 +17,4 @@ class Contact extends Component {
     }
 }
 
-export default connect(Details.mapStateToProps)(Contact);
+export default connect(Contact.mapStateToProps)(Contact);
