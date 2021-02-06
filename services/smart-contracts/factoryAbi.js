@@ -1,6 +1,15 @@
 export const factoryAbi = [
 	{
 		"constant": false,
+		"inputs": [],
+		"name": "abandonContract",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
 		"inputs": [
 			{
 				"name": "_address",
