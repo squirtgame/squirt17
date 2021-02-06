@@ -28,6 +28,26 @@ class Contact extends Component {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </Page>
         )

@@ -18,36 +18,18 @@ class Faq extends Component {
                 <p>The chances of actually guessing the correct number obviously improves after each guess. Now because it gets easier to guess the number, the cost of the guess also increases.</p>
 
                 <br />
-<ul>
-<li><p>Guess 1 - FREE! </p></li>
-<li><p>Guess 2 - 0.25 HPB</p></li>
-<li><p>Guess 3 - 0.50 HPB</p></li>
-<li><p>Guess 4 - 0.60 HPB</p></li>
-<li><p>Guess 5 - 0.70 HPB</p></li>
-<li><p>Guess 6 - 0.80 HPB</p></li>
-<li><p>Guess 7 - 0.90 HPB</p></li>
-<li><p>Guess 8 - 1.00 HPB</p></li>      
-<li><p>Guess 9 - 2.00 HPB</p></li> 	
-<li><p>Guess 10 - 3.00 HPB</p></li>	
-<li><p>Guess 11 - 4.00 HPB</p></li>		
-<li><p>Guess 12 - 5.00 HPB</p></li>
-<li><p>Guess 13 - 6.00 HPB</p></li>
-<li><p>Guess 14 - 7.00 HPB</p></li>
-<li><p>Guess 15 - 8.00 HPB</p></li>
-<li><p>Guess 16 - 9.00 HPB</p></li>  
-		
-
+				
+	<img src="/static/images/favicon/guess_table.png" alt="Metamask" width="642" height="360"/> 			
+				
 <br />
 <br />
-<li>                <p>Guess 17 - 10.00 HPB - This final guess is automatically refunded if you don't win!</p>		</li>
-</ul>
                 <br />
 
                 <p>If nobody guesses correctly by the 17th guess, then the game ends and the HPB in the contract gets automatically transferred to the next game (minus a small dev fee) so as each game rolls over, the amount of Eth in the contract that is up for grabs gets bigger and bigger!</p>
 
                 <br />
 
-<h3>FAQ</h3>
+<h3></h3>
 
 <dl class="faq">
   <dt>
@@ -109,8 +91,9 @@ When you open Metamask, you'll need to switch from the default "Ethereum Main-ne
 following information: "Network Name" = HPB Network | "New RPC URL" = https://node.hpb.io | "Chain ID" = 0x10D | "Currency Symbol" = HPB | "Block Explorer URL" = https://explorer.myhpbwallet.com/
              
     </p>
-<img src="/static/images/ads/metamask.png" alt="Metamask" width="1200" height="900"/> 
-    
+<img src="/static/images/ads/metamask.png" alt="Metamask" width="900" height="600"/> 
+   <br />
+	<br />
 	
   </dd>
     <dt>
