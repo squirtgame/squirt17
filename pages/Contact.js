@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import Page from "../site-components/page/Page";
 import {Space} from "../components/Space";
 
-class Details extends Component {
+class Contact extends Component {
     static mapStateToProps = ({dangerMode}) => ({dangerMode});
 
     render () {
