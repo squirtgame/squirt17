@@ -197,4 +197,4 @@ Visit the community on the <b><a href=" https://t.me/HPBglobal" target="_blank">
     }
 }
 
-export default connect(Details.mapStateToProps)(Faq);
+export default connect(Faq.mapStateToProps)(Faq);
