@@ -87,8 +87,8 @@ contract on the blockchain, which costs a very small amount of gas (0.02). This 
   </dt>
   <dd>
     <p id="faq4_desc" class="desc">
-When you open Metamask, you'll need to switch from the default "Ethereum Main-net" option, to the "Custom RPC" option. At this point, you'll need to supply the
-following information: "Network Name" = HPB Network | "New RPC URL" = https://node.hpb.io | "Chain ID" = 0x10D | "Currency Symbol" = HPB | "Block Explorer URL" = https://explorer.myhpbwallet.com/
+When you open Metamask, you'll need to switch from the default "Ethereum Main-net" network option, to the "Custom RPC" option. At this point, you'll need to supply the
+following information: "Network Name" = HPB Network | "New RPC URL" = https://node.hpb.io | "Chain ID" = 269 | "Currency Symbol" = HPB | "Block Explorer URL" = https://hpbscan.org/
              
     </p>
 <img src="/static/images/ads/metamask.png" alt="Metamask" width="900" height="600"/> 
