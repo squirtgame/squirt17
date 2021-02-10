@@ -1,6 +1,6 @@
 {
   "masterContract": "0x6a1963c88dcb5a8acc3448ad84eb8e4304a56b19",
-  "httpProvider": "http://121.18.231.88:28545/",
+  "httpProvider": "https//node.hpb.io",
   "etherscanUrl": "https://hpbscan.org",
   "contractUpdateInterval": {
     "seconds": 2
