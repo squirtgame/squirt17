@@ -1,7 +1,28 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import Page from "../site-components/page/Page";
+import withMetamaskAccount from "../components/hocs/withMetamaskAccount";
+import withContracts from "../site-components/hocs/withContracts";
+import {compose} from "redux";
+import settings from "../settings";
+import {Address} from "../site-components/Address";
+import {Moment} from "../components/Moment";
 import {Space} from "../components/Space";
+
+
+
+
+
+
+
+
+
+
+
+// import React, {Component} from "react";
+// import {connect} from "react-redux";
+// import Page from "../site-components/page/Page";
+// import {Space} from "../components/Space";
 
 class Contact extends Component {
     static mapStateToProps = ({dangerMode}) => ({dangerMode});
