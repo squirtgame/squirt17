@@ -13,7 +13,7 @@ class Header extends Component {
             <header {...props}>
                 <Logo/>
 				
-				<a target="_blank" href="https://t.me/hpb17bot"><img src="/static/images/favicon/telegram_bot.png" alt="Metamask" width="480" height="60"/>      </a>
+				<a target="_blank" href="https://t.me/joinchat/IEQSIQ3co32NW-2J"><img src="/static/images/favicon/telegram_bot.png" alt="Metamask" width="480" height="60"/>      </a>
                 {children}
                 <MainMenu/>
             </header>
