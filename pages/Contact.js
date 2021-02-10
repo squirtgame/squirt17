@@ -75,4 +75,10 @@ class Contact extends Component {
     }
 }
 
-export default connect(Contact.mapStateToProps)(Contact);
+// export default connect(Contact.mapStateToProps)(Contact);
+
+export default compose(
+    withMetamaskAccount,
+    withContracts,
+    connect(Contact.mapStateToProps)
+)(Contact);
