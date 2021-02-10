@@ -42,7 +42,7 @@ class Contact extends Component {
                 <br />
                 <br />
 
-                <p>You can also find us both on Telegram (@jeffpUK | @jxden) usually frequenting the HPB_Global Telegram group</p>
+                <p>You can also find us both on Telegram (@jeffpUK | @jxyden) usually frequenting the HPB_Global Telegram group</p>
 
                 <br />
 
