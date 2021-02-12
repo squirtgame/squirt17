@@ -39,7 +39,7 @@ class Index extends Component {
             settings.dangerModeStartTime.seconds * 1000;
     }
 
-    componentDidMount(){
+    componentWillMount(){
         this.props.addContractUpdateTimer();
     }
 
