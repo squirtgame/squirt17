@@ -25,6 +25,15 @@ export const factoryAbi = [
 	{
 		"constant": false,
 		"inputs": [],
+		"name": "destroy",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
 		"name": "firstSpawn",
 		"outputs": [],
 		"payable": false,
