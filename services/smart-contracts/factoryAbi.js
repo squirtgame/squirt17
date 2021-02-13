@@ -359,4 +359,4 @@ export const factoryAbi = [
 		"stateMutability": "view",
 		"type": "function"
 	}
-] ;
+]  ;
