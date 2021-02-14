@@ -2,29 +2,6 @@ export const factoryAbi = [
 	{
 		"constant": false,
 		"inputs": [],
-		"name": "abandonContract",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "_address",
-				"type": "address"
-			}
-		],
-		"name": "addDevWallet",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [],
 		"name": "destroy",
 		"outputs": [],
 		"payable": true,
@@ -44,20 +21,6 @@ export const factoryAbi = [
 		"constant": false,
 		"inputs": [],
 		"name": "newSpawn",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "_address",
-				"type": "address"
-			}
-		],
-		"name": "removeDevWallet",
 		"outputs": [],
 		"payable": false,
 		"stateMutability": "nonpayable",
@@ -221,20 +184,6 @@ export const factoryAbi = [
 		"outputs": [
 			{
 				"name": "contractCount",
-				"type": "uint256"
-			}
-		],
-		"payable": false,
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"constant": true,
-		"inputs": [],
-		"name": "getDevWalletCount",
-		"outputs": [
-			{
-				"name": "",
 				"type": "uint256"
 			}
 		],
