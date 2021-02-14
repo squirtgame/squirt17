@@ -2,15 +2,6 @@ export const templateAbi = [
 	{
 		"constant": false,
 		"inputs": [],
-		"name": "abandonContract",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"constant": false,
-		"inputs": [],
 		"name": "destroy",
 		"outputs": [],
 		"payable": true,
