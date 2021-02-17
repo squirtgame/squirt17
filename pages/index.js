@@ -3,6 +3,7 @@ import {compose} from "redux";
 import {connect} from "react-redux";
 import Page from "../site-components/page/Page";
 import withContracts from "../site-components/hocs/withContracts";
+import '@metamask/legacy-web3'
 import withMetamaskAccount from "../components/hocs/withMetamaskAccount";
 import {turnOffDangerMode, turnOnDangerMode, updateTemplateContract} from "../redux/actions";
 import {parseErrorString} from "../services/utils";
