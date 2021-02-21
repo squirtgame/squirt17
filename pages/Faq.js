@@ -15,7 +15,8 @@ class Faq extends Component {
                 <br />
                 <br />
 
-                <p>The chances of actually guessing the correct number obviously improves after each guess. Now because it gets easier to guess the number, the cost of the guess also increases.</p>
+                <p>The chances of actually guessing the correct number obviously improves after each guess. 
+		Now because it gets easier to guess the number, the cost of the guess also increases.</p>
 
                 <br />
 				
@@ -69,17 +70,7 @@ All transactions are timestamped, so whichever guess is written to the blockchai
                     see the transaction will have been reverted. 
     </p>
   </dd>
-  <dt>
-    <button aria-expanded="false" aria-controls="faq4_desc">
-      You said the first guess is free?
-    </button>
-  </dt>
-  <dd>
-    <p id="faq4_desc" class="desc">
-The first guess of every new game is free, however this involves sending your guess to the smart 
-contract on the blockchain, which costs a very small amount of gas (0.02). This is less than $0.01 in value. 
-    </p>
-  </dd>
+
     <dt>
     <button aria-expanded="false" aria-controls="faq5_desc">
       How do I setup Metamask to work with the HPB blockchain?
@@ -165,6 +156,18 @@ Do you have real-time support?
   <dd>
     <p id="faq4_desc" class="desc">
 Visit the community on the <b><a href=" https://t.me/HPBglobal" target="_blank">HPB Global Telegram Chat</a></b> and stay in touch with a great community!
+               
+    </p>
+  </dd>
+	 
+<dt>
+    <button aria-expanded="false" aria-controls="faq11_desc">
+How do I play from the telegram bot??
+    </button>
+  </dt>
+  <dd>
+    <p id="faq4_desc" class="desc">
+Visit the HPB17 bot at: <b><a href=" https://t.me/PlayHPB17bot" target="_blank">HPB17 Telegram bot</a></b> and type in /help for more details.
                
     </p>
   </dd>
