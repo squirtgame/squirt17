@@ -14,20 +14,17 @@ class Details extends Component {
                 <br />
 
 
-                <p>HPB17 Smart Contract can be verified here: (URL to be updated for final release) 
-				<a href="https://hpbscan.org/tx/0x4aac7dbd444a84c485a531e0f30742791c832cd343bd7bbb45a6bc7d05dab910" target="_blank"><h2><b>0x9accc0b9a45cd25d0c40559e60a8b6d410e07f1c</b></h2></a></p>
-            
-               
+                <p>HPB17 Master Contract can be verified here: 
+				<a href="https://hpbscan.org/tx/0x5d611d78F36130a301DCd872aF01FeBe6b5AB58F" target="_blank"><h2><b>0x5d611d78F36130a301DCd872aF01FeBe6b5AB58F</b></h2></a></p>
+                         
 				<br />
 				<br />
+		<p>HPB17 Factory Contract can be verified here: 
+				<a href="https://hpbscan.org/tx/0xE53e02f666d240A63833542232396272cBBEaa63" target="_blank"><h2><b>0xE53e02f666d240A63833542232396272cBBEaa63</b></h2></a></p>
 				<br />
 
 			   <div align="left">
                 <p>HPB17 is a really simple guessing game, which harnesses the power of the HPB Hardware Random Numbe Generator (HRNG) where you try to guess a number between 1 and 1,000,000</p>
-
-                <p>Ok we know, guessing a number in such a wide range may seem impossible, but don't worry, the first guess of every game is FREE, and better still, if you guess incorrectly, then providing nobody else makes a guess after you, then you will win all the HPB stored in the contract anyway!</p>
-
-                <p>Yep, you heard us right. Get it wrong, and you can still win all the HPB!</p>
 
                 <p>So what actually happens? Well as soon as you make a guess, a countdown timer starts. It begins counting down from 59m 59s, and if the timer reaches zero and nobody else makes a guess, then the last person who made a guess wins all the HPB in the contract!</p>
 
