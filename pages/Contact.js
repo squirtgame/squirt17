@@ -161,29 +161,6 @@ class Index extends Component {
 
                 <br />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
             </Page>
         )
