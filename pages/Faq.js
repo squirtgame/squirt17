@@ -1,12 +1,23 @@
 import React, {Component} from "react";
+import {compose} from "redux";
 import {connect} from "react-redux";
 import Page from "../site-components/page/Page";
+import withContracts from "../site-components/hocs/withContracts";
 import {Space} from "../components/Space";
+
+
+import withMetamaskAccount from "../components/hocs/withMetamaskAccount";
+import {
+    LoginMessage,
+    TransactionMessage
+} from "../site-components/messages";
 
 class Faq extends Component {
     static mapStateToProps = ({dangerMode}) => ({dangerMode});
 
     render () {
+		const {metamaskAccount} = this.props;
+        const isLoggedIntoMetamask = Object.keys(metamaskAccount).length > 0;
         return (
         <Page header={<Space danger={this.props.dangerMode}/>} contentClass="full-width">
 		                <div className="glass container bg-color-white br-5">
@@ -183,4 +194,9 @@ Visit the HPB17 bot at: <b><a href=" https://t.me/PlayHPB17bot" target="_blank">
     }
 }
 
-export default connect(Faq.mapStateToProps)(Faq);
+
+export default compose(
+    withMetamaskAccount,
+	withContracts,
+    connect(Faq.mapStateToProps)
+)(Faq);
