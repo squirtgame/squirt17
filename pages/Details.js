@@ -26,12 +26,12 @@ class Details extends Component {
 
 
                 <p>HPB17 Master Contract can be verified here: 
-				<a href="https://hpbscan.org/tx/0x5d611d78F36130a301DCd872aF01FeBe6b5AB58F" target="_blank"><h2><b>0x5d611d78F36130a301DCd872aF01FeBe6b5AB58F</b></h2></a></p>
+				<a href="https://hpbscan.org/tx/0x8a604dc44adcc43b739a14668f2d782f64284422" target="_blank"><h2><b>0x8a604dc44adcc43b739a14668f2d782f64284422</b></h2></a></p>
                          
 				<br />
 				<br />
 		<p>HPB17 Factory Contract can be verified here: 
-				<a href="https://hpbscan.org/tx/0xE53e02f666d240A63833542232396272cBBEaa63" target="_blank"><h2><b>0xE53e02f666d240A63833542232396272cBBEaa63</b></h2></a></p>
+				<a href="https://hpbscan.org/tx/0x83b2357fb415f1dd028af6f590e61fe83146e46e" target="_blank"><h2><b>0x83b2357fb415f1dd028af6f590e61fe83146e46e</b></h2></a></p>
 				<br />
 
 			   <div align="left">
