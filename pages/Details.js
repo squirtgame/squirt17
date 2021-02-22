@@ -1,12 +1,23 @@
 import React, {Component} from "react";
+import {compose} from "redux";
 import {connect} from "react-redux";
 import Page from "../site-components/page/Page";
+import withContracts from "../site-components/hocs/withContracts";
 import {Space} from "../components/Space";
+
+
+import withMetamaskAccount from "../components/hocs/withMetamaskAccount";
+import {
+    LoginMessage,
+    TransactionMessage
+} from "../site-components/messages";
 
 class Details extends Component {
     static mapStateToProps = ({dangerMode}) => ({dangerMode});
 
     render () {
+		const {metamaskAccount} = this.props;
+        const isLoggedIntoMetamask = Object.keys(metamaskAccount).length > 0;
         return (
         <Page header={<Space danger={this.props.dangerMode}/>} contentClass="full-width">
                                 
@@ -71,4 +82,8 @@ class Details extends Component {
     }
 }
 
-export default connect(Details.mapStateToProps)(Details);
+export default compose(
+    withMetamaskAccount,
+	withContracts,
+    connect(Details.mapStateToProps)
+)(Details);
