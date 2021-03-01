@@ -68,6 +68,7 @@ class Countdown extends React.Component {
             d = Math.floor(h / 24);
 
         return {
+            hours: h % 24,
             minutes: m % 60,
             seconds: s % 60
         };
