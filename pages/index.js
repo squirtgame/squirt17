@@ -256,13 +256,13 @@ class Index extends Component {
 						<br />
 						<br />
 				<p>HPB17 Master Contract can be verified here: 
-				<a href="https://hpbscan.org/tx/0x2732023fbb28bcf347d9bdaf5d6b3cadef9da577" target="_blank">
-				<h2><b>0x2732023fbb28bcf347d9bdaf5d6b3cadef9da577</b></h2></a></p>
+				<a href="https://hpbscan.org/tx/0xadf10c7e09b4d9c25dd22f2f855f987fe1350f7d" target="_blank">
+				<h2><b>0xadf10c7e09b4d9c25dd22f2f855f987fe1350f7d</b></h2></a></p>
                          
 				
 				<p>HPB17 Factory Contract can be verified here: 
-				<a href="https://hpbscan.org/tx/0x68edf077c01edc233e519105a85bc29ef7ba8734" target="_blank">
-				<h2><b>0x68edf077c01edc233e519105a85bc29ef7ba8734</b></h2></a></p>
+				<a href="https://hpbscan.org/tx/0xed7e73df79149d648f0975978b138c43e73bbb6e" target="_blank">
+				<h2><b>0xed7e73df79149d648f0975978b138c43e73bbb6e</b></h2></a></p>
 				<br />
                 </div>
 				
@@ -285,9 +285,9 @@ class Index extends Component {
 
                 <p>If you guess the hidden number, you win the entire pot of HPB stored in the game!</p>
 
-		<p>But don't worry if you guess incorrectly. As soon as you make a guess, a countdown timer starts. It begins counting down from 17 hours, and if the timer reaches zero and nobody else makes a guess, then the last person who made a guess wins 17 HPB!</p>
+		<p>But don't worry if you guess incorrectly. As soon as you make a guess, a countdown timer starts. It begins counting down from 17 hours, and if the timer reaches zero and nobody else makes a guess, then the last person who made a guess wins all the HPB anyway!</p>
 
-                <p>But what happens if someone else makes a guess? Well that person immediately becomes the "last player to guess" and the countdown timer resets to 17 hours - Once again, if the timer reaches zero then that "last player to guess" wins 17 HPB!</p>
+                <p>But what happens if someone else makes a guess? Well that person immediately becomes the "last player to guess" and the countdown timer resets to 17 hours - Once again, if the timer reaches zero then that "last player to guess" wins all the HPB!</p>
 
                 <p>After each subsequent guess, the contract will even tell you that you that you need to go higher or lower for the next guess and the "guessing range" shrinks after each subsequent guess.</p>
 
