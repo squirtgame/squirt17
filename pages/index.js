@@ -256,13 +256,13 @@ class Index extends Component {
 						<br />
 						<br />
 				<p>HPB17 Master Contract can be verified here: 
-				<a href="https://hpbscan.org/tx/0x8a604dc44adcc43b739a14668f2d782f64284422" target="_blank">
-				<h2><b>0x8a604dc44adcc43b739a14668f2d782f64284422</b></h2></a></p>
+				<a href="https://hpbscan.org/tx/0x2732023fbb28bcf347d9bdaf5d6b3cadef9da577" target="_blank">
+				<h2><b>0x2732023fbb28bcf347d9bdaf5d6b3cadef9da577</b></h2></a></p>
                          
 				
 				<p>HPB17 Factory Contract can be verified here: 
-				<a href="https://hpbscan.org/tx/0x83b2357fb415f1dd028af6f590e61fe83146e46e" target="_blank">
-				<h2><b>0x83b2357fb415f1dd028af6f590e61fe83146e46e</b></h2></a></p>
+				<a href="https://hpbscan.org/tx/0x68edf077c01edc233e519105a85bc29ef7ba8734" target="_blank">
+				<h2><b>0x68edf077c01edc233e519105a85bc29ef7ba8734</b></h2></a></p>
 				<br />
                 </div>
 				
@@ -283,9 +283,11 @@ class Index extends Component {
 
 				<p>HPB17 is a really simple guessing game, which harnesses the power of the HPB Hardware Random Numbe Generator (HRNG) where you try to guess a number between 1 and 1,000,000</p>
 
-                <p>So what actually happens? Well as soon as you make a guess, a countdown timer starts. It begins counting down from 59m 59s, and if the timer reaches zero and nobody else makes a guess, then the last person who made a guess wins all the HPB in the contract!</p>
+                <p>If you guess the hidden number, you win the entire pot of HPB stored in the game!</p>
 
-                <p>But what happens if someone else makes a guess? Well that person immediately becomes the "last player to guess" and the countdown timer resets to 59m 59s - Once again, if the timer reaches zero then that "last player to guess" wins all the HPB!</p>
+		<p>But don't worry if you guess incorrectly. As soon as you make a guess, a countdown timer starts. It begins counting down from 17 hours, and if the timer reaches zero and nobody else makes a guess, then the last person who made a guess wins 17 HPB!</p>
+
+                <p>But what happens if someone else makes a guess? Well that person immediately becomes the "last player to guess" and the countdown timer resets to 17 hours - Once again, if the timer reaches zero then that "last player to guess" wins 17 HPB!</p>
 
                 <p>After each subsequent guess, the contract will even tell you that you that you need to go higher or lower for the next guess and the "guessing range" shrinks after each subsequent guess.</p>
 
@@ -322,7 +324,8 @@ class Index extends Component {
 <br />
                 <br />
 
-                <p>If nobody guesses correctly by the 17th guess, then the game ends and the HPB in the contract gets automatically transferred to the next game (minus a small dev fee) so as each game rolls over, the amount of Eth in the contract that is up for grabs gets bigger and bigger!</p>
+                <p>If nobody guesses correctly by the 17th guess, then the game ends and the HPB in the contract gets automatically transferred to the next game (minus a small dev fee) so as each game rolls over, 
+the amount of HPB in the contract that is up for grabs gets bigger and bigger!</p>
 
                 <br />
 
@@ -394,19 +397,7 @@ Occasionally there may be a delay with processing to the blockchain. In this ins
                     completely cancelling/rejecting the transaction in Metamask, and try guessing again.
     </p>
   </dd>
-    <dt>
-    <button aria-expanded="false" aria-controls="faq7_desc">
-Can I alter the gas to make a saving?
-    </button>
-  </dt>
-  <dd>
-    <p id="faq4_desc" class="desc">
-Of course! We have injected a default fee of 0.02, however you can increase or decrease this value
-                    to your choosing. Increasing the value will cost more, however it will usually speed up the
-                    time taken to write your guess to the smart contract.
-    </p>
-  </dd>
-    <dt>
+     <dt>
     <button aria-expanded="false" aria-controls="faq8_desc">
 Can I interact with the smart contract game directly?
     </button>
