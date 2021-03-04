@@ -502,7 +502,7 @@ Visit the HPB17 bot at: <b><a href=" https://t.me/PlayHPB17bot" target="_blank">
 				
 				
 				
-            </Page>
+             </Page>
         )
     }
 }
