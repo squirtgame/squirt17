@@ -3,7 +3,7 @@
   "httpProvider": "https://node.hpb.io",
   "etherscanUrl": "https://hpbscan.org",
   "contractUpdateInterval": {
-    "seconds": 2
+    "seconds": 3
   },
   "randomNumberWaitTime": {
     "seconds": 60
