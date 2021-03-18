@@ -1,6 +1,6 @@
 {
   "masterContract": "0xed7e73df79149d648f0975978b138c43e73bbb6e",
-  "httpProvider": "http://node.nyhpbwallet.com",
+  "httpProvider": "http://node.hpb.io",
   "etherscanUrl": "https://hpbscan.org",
   "contractUpdateInterval": {
     "seconds": 2
